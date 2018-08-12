@@ -1,6 +1,6 @@
 # Unit 16 | Assignment - Data Journalism and D3
 
-Level 2 Assignment is done
+Level 2 Assignment is done, Please use python server `python -m http.server` to view the webpage.
 
 ### Level 2: Impress the Boss (Optional Challenge Assignment)
 
