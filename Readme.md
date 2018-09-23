@@ -1,22 +1,21 @@
-# Unit 16 | Assignment - Data Journalism and D3
+#Data Journalism
+![Newsroom](https://media.giphy.com/media/v2xIous7mnEYg/giphy.gif)
 
-Level 2 Assignment is done, Please use python server `python -m http.server` to view the webpage.
+##Interactive Plot built using D3
+* As the poverty rate increases, we generally see increase in obesity, percent of people smoking and lacking healthcare.
+* We see almost opposite trend with the increase in MHI (median household income). 
+* We do not see any clear trends with age as data is more scattered.
+* State of texas pops out in percent of uninsured
+![Visual](Images/D3_DataJournalism.gif)
 
-### Level 2: Impress the Boss (Optional Challenge Assignment)
+Demographics data has been read from url obviating the need for python server (`python -m http.server`) to see the visualization.
+Each circle represents a state (per abbreviation), so the demographics comparison of all states are presented.
 
-Why make a static graphic when D3 lets you interact with your data?
+#### 2. Tool-Tips incorporated
 
-![7-animated-scatter](Images/7-animated-scatter.gif)
+Tooltips added to the circles to display the exact numbers behind the plot. 
+Used the `d3-tip.js` plugin developed by [Justin Palmer](https://github.com/Caged)
 
-#### 1. More Data, More Dynamics
-
-You're going to include more demographics and more risk factors. Place additional labels in your scatter plot and give them click events so that your users can decide which data to display. Animate the transitions for your circles' locations as well as the range of your axes. Do this for two risk factors for each axis. Or, for an extreme challenge, create three for each axis.
-
-* Hint: Try binding all of the .csv data to your circles. This will let you easily determine their x or y values when you click the labels.
-
-#### 2. Incorporate d3-tip
-
-While the ticks on the axes allow us to infer approximate values for each circle, it's impossible to determine the true value without adding another layer of data. Enter tooltips: developers can implement these in their D3 graphics to reveal a specific element's data when the user hovers their cursor over the element. Add tooltips to your circles and display each tooltip with the data that the user has selected. Use the `d3-tip.js` plugin developed by [Justin Palmer](https://github.com/Caged)—we've already included this plugin in your assignment directory.
-
-![8-tooltip](Images/8-tooltip.gif)
-
+#### Window Resize included
+Chart resizes automatically with window.
+![Visual](Images/D3_DataJournalism2.gif)

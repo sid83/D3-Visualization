@@ -38,7 +38,6 @@ function makeResponsive() {
   // Initial Params
   var chosenXAxis = "poverty";  // poverty
   var chosenYAxis = "obesity";  // obesity
-
   function xyscale (data, chosenXAxis, chosenYAxis) {
     if (chosenXAxis !== "income") {
       var xLinearScale = d3.scaleLinear()
@@ -127,7 +126,8 @@ function makeResponsive() {
   };
 
   // step6: Retrieve data from csv file and plot
-  d3.csv("data.csv").then(succesHandle, errorHandle);
+  const url = "https://raw.githubusercontent.com/sid83/D3-Visualization/master/data.csv"
+  d3.csv(url).then(succesHandle, errorHandle);
   function errorHandle(error) {console.log(error)};
 
   function succesHandle(data) {
